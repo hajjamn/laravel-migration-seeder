@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime('departure_time');
             $table->dateTime('arrival_time');
             $table->string('train_code');
-            $table->tinyint('wagons_number');
+            $table->tinyInteger('wagons_number');
             $table->boolean('on_time')->default(true);
             $table->boolean('cancelled')->default(false);
             $table->timestamps();
